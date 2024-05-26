@@ -1,16 +1,17 @@
 package com.example.demo.Controller;
 
-import com.example.demo.Entity.Instrumento;
+import com.example.demo.Entity.PedidoDetalle;
 import com.example.demo.Service.InstrumentoServiceImpl;
+import com.example.demo.Service.PedidoDetalleServiceImpl;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping(path= "instrumentos")
-public class InstrumentoController extends BaseControllerImpl<Instrumento, InstrumentoServiceImpl> {
-    public InstrumentoController(InstrumentoServiceImpl servicio) {
+@RequestMapping(path= "detalles")
+public class PedidoDetalleController extends BaseControllerImpl<PedidoDetalle, PedidoDetalleServiceImpl> {
+    public PedidoDetalleController(PedidoDetalleServiceImpl servicio) {
         super(servicio);
     }
 }

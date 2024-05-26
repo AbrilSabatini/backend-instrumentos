@@ -18,8 +18,4 @@ public class CategoriaInstrumentoController extends BaseControllerImpl<Categoria
         super(servicio);
     }
 
-    @Override
-    public ResponseEntity<?> findById(Long aLong) {
-        return null;
-    }
 }

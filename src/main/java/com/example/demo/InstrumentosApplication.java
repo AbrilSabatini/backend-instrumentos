@@ -8,6 +8,7 @@ public class InstrumentosApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(InstrumentosApplication.class, args);
+		System.out.println("Estoy en el main");
 	}
 
 }
